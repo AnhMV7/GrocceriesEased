@@ -63,6 +63,10 @@ interface.configure()
 
 someList = Listbox(interface, selectmode=BROWSE, bg='white', selectbackground='black')
 someList.grid(row=2,column=1,sticky=N)
+scroll = Scrollbar(interface, orient=VERTICAL)
+scroll.grid(row=2, column=3, sticky='nsw')
+someList.config(yscrollcommand=scroll.set)
+scroll.config(command=someList.yview)
 
 groceryList(grocery)
 item=StringVar()
