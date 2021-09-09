@@ -79,6 +79,9 @@ This project is licensed under the MIT License.
 
 ## Version History
 
+* 1.2
+   * Added a scroll-bar
+
 * 1.1
     * Initial Release
 
